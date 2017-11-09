@@ -5,6 +5,7 @@
   "description": "Embed Rust in your webpack, with auto-installing Emscripten",
   "dependencies": {
     "loader-utils": "^1.0.3",
+    "md5-file": "^3.2.3",
     "toml": "^2.3.2",
     "wargo": "^0.2.0"
   },

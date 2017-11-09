@@ -61,7 +61,7 @@ module.exports = function(source) {
       return callback(new Error('No wasm file found', null))
     }
 
-    const hash = md5File.sync(path.join(outDir, 'deps', wasmFile)).slice(0,7)
+    const hash = md5File.sync(path.join(outDir, 'deps', wasmFile)).slice(0,opts.hashLength || 8)
 
     // Emit the wasm file
     self.emitFile(
